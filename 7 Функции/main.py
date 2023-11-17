@@ -19,7 +19,7 @@ def exponentiation(n: int) -> None:
     print(n ** 2, n ** 3)
 
 
-def sum_num(string: str) -> None:
+def sum_num(string: str | int) -> None:
     print(sum([int(i) for i in string if i.isdigit()]))
 
 
@@ -41,10 +41,14 @@ def get_body_mass_index(weight: int, height: int) -> None:
 # print('Проверки пройдены')
 
 
+value = 10
 
 
 def foo():
-    a = 10
-    """Возвращает сумму чисел a и b в двоичном виде"""
+    value = 5
+    global value
+    value += 1
 
-print(foo.__doc__)
+
+print(value)
+
