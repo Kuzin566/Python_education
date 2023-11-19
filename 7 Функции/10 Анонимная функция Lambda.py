@@ -38,4 +38,4 @@
 sq = lambda x, y: x ** 2 + y ** 2
 print(sq(8, 11))
 
-average = lambda *args: sum(args) / len(args)
+# average = lambda *args: sum(args) / len(args)

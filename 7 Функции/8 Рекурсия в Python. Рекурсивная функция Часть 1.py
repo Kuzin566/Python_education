@@ -38,9 +38,9 @@
 #     return palindrom(s[1:-1])
 
 
-def print_from(n) -> None:
-    if n >= 1:
-        print(n)
-        print_from(n - 1)
-
-print_from(7)
+# def print_from(n) -> None:
+#     if n >= 1:
+#         print(n)
+#         print_from(n - 1)
+#
+# print_from(7)
