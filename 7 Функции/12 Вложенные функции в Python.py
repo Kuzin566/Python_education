@@ -1,21 +1,21 @@
-from typing import Callable
-
-
-def get_math_func(operation: str) -> Callable[[int, int], str]:
-    def add(a: int, b: int) -> str:
-        return str(a + b)
-
-    def subtract(a: int, b: int) -> str:
-        return str(a - b)
-
-    if operation == "+":
-        return add
-    elif operation == "-":
-        return subtract
-
-
-h = get_math_func(operation='+')
-print(h('2', 2))
+# from typing import Callable
+#
+#
+# def get_math_func(operation: str) -> Callable[[int, int], str]:
+#     def add(a: int, b: int) -> str:
+#         return str(a + b)
+#
+#     def subtract(a: int, b: int) -> str:
+#         return str(a - b)
+#
+#     if operation == "+":
+#         return add
+#     elif operation == "-":
+#         return subtract
+#
+#
+# h = get_math_func(operation='+')
+# print(h('2', 2))
 #
 # def colors():
 #     a = 1
@@ -32,3 +32,16 @@ print(h('2', 2))
 #
 #
 # colors()
+
+
+def outer():
+    def say_hello() -> None:
+        print('hello')
+
+    def say_bye() -> None:
+        print('bye')
+
+    say_bye()
+    say_hello()
+
+outer()
