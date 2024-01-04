@@ -18,4 +18,3 @@ class Person:
     def my_name(self):
         print("Delete name")
         del self._name
-
